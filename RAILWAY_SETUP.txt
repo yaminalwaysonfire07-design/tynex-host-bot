@@ -1,0 +1,14 @@
+RAILWAY SETUP
+
+1. Push all files in this folder to your GitHub repository.
+2. In Railway, deploy the GitHub repository as a Worker service.
+3. Add a Railway Volume mounted at: /data
+4. Add these Railway Variables:
+   TELEGRAM_BOT_TOKEN = your NEW Telegram bot token
+   DATA_DIR = /data
+5. Deploy. The Procfile starts: python TY_HG.py
+
+IMPORTANT:
+- The old token was present in the original source file. Revoke it in BotFather and use a newly generated token.
+- This bot runs uploaded Python/JavaScript files. Do not expose it to untrusted users without proper process isolation, resource limits, and security controls.
+- Node.js is included for the bot's JavaScript-run feature.
